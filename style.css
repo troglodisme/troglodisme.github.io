@@ -1,78 +1,116 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500;600;700&display=swap');
 
-body {
-    /* overflow: hidden; */
-  font-family: Work Sans;
-  font-size: 16px;
-  line-height: 1.2;
+/* secttion */
+/* margin: auto; */
 
-  background-color: #ffffff;
+
+body {
+  /* overflow: hidden; */
+  font-family: Work Sans;
+  font-size: 32px;
+  line-height: 1.2;
+  margin: 10px;
+  background-color: #fafafa;
   color: #111111;
 }
 
 header{
-  /* background-color: #000000; */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  width:100%;
 }
+
+header div {
+  width:50%;
+  border: 1px;
+
+}
+
+nav.info{
+  text-align: right;
+}
+
 
 nav {
-  background-color: #d93f3f;
-
- font-size: 32px;
- font-weight: 600;
- letter-spacing: 0.02em;
- /* position: fixed; */
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  /* position: fixed; */
 }
 
-a {
+section{
+  max-width: 960px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section img{
+  max-width: 960px;
+}
+
+div.caption p{
+  font-size: 32px;
+  text-align: center;
+  color: #111111;
+}
+
+
+ nav a {
   color: #111111;
   text-decoration: none;
   transition: color 0.3s;
 }
 
-a:hover {
+nav a:hover {
   color: #0000ff;
 }
 
 
-@media (max-width: 540px) {
-
-  header div nav {
-    background-color: #d93f3f;
-    padding:50px;
-  }
-
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position:fixed;
+  bottom:10px;
 }
 
+footer div{
+  width: 50%
+}
 
-
-
+footer nav.home{
+  text-align: right;
+}
 
 /*
-nav.work {
-  top: 32px;
-  left: 2%;
-}
-
-nav.info {
-  top: 32px;
-  right: 2%;
-}
-
-nav.lab {
-  bottom: 32px;
-  left: 2%;
-}
-
-nav.title {
-  position: fixed;
+h1, h2 {
   text-align: center;
-  top: 32px;
-  right: 0;
-  left: 0;
-  margin-right: auto;
-  margin-left: auto;
-  z-index: -1;
+}
+
+.selected {
+  background-color: #fafafa;
+  color: #000000;
+}
+
+p.bio{
+  text-align: left;
+  padding-left:5%;
+  padding-right:30%;
 } */
+
+
+
+@media (max-width: 560px) {
+
+  body{
+    margin:0px;
+  }
+
+  nav.work, nav.info{
+    text-align: center;
+  }
+}
