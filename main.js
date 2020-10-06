@@ -17,8 +17,6 @@ const circleTag = document.querySelector("section div.circle")
 const imageTag = document.querySelector("img[src='assets/P7060192.JPG']")
 
 
-
-
 const next = function(){
   itemNumber = itemNumber + 1
 
