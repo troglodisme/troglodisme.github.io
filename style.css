@@ -4,7 +4,7 @@
  body {
   font-family: Work Sans;
   line-height: 1.2;
-  margin: 10px;
+  margin: 0;
   background-color: #fafafa;
   color: #111111;
 }
@@ -13,18 +13,20 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  width:100%;
+
+  background-color: red;
 }
 
 header div{
+  height:100px;
   width:50%;
-  border: 1px;
 }
 
 nav {
-  font-size: 32px;
+  padding: 32px;
+  font-size: 24px;
   font-weight: 600;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
 }
 
 nav.info{
@@ -43,15 +45,96 @@ section {
 
 section p{
     font-weight:400;
-    font-size:32px;
-}
-
-img.project{
-  width:100%;
+    font-size:24px;
 }
 
 
-div.circle{
+.slide-container {
+  /* max-width: 960px;
+  position: fixed; */
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+}
+
+.slide-container .slide {
+  display: none;
+  width: 100%;
+}
+
+/* .slide-container .slide.fade {
+  animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+} */
+
+.slide-container .slide img {
+  width: 100%;
+}
+
+
+/* SLIDE CONTROL BUTTONS */
+
+.slide-container .prev,
+.slide-container .next {
+  cursor: pointer;
+  position: absolute;
+  width: auto%;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* .slide-container .prev:hover,
+.slide-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+} */
+
+.slide-container .prev {
+  left: 2px;
+}
+
+.slide-container .next {
+  right: 2px;
+}
+
+
+/* DOTS */
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.dots-container .dot {
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #E6E6E6;
+}
+
+.dots-container .dot.active {
+  border: 2px solid black;
+}
+
+
+/* CAPTION */
+
+
+.circle{
   width:20px;
   height:20px;
   background-color: #000000;
@@ -59,7 +142,7 @@ div.circle{
   margin:auto;
 }
 
-div.caption p{
+.caption p{
   font-size: 32px;
   text-align: center;
   color: #111111;
@@ -82,13 +165,12 @@ nav a:hover {
 
 footer{
   position:fixed;
-  bottom: 10px;
-  left: 0;
+  bottom: 0;
   width: 100%;
-  padding: 30px;
+
+  background-color: red;
 
   display: flex;
-
   justify-content: center;
   align-items: center;
 }
@@ -106,6 +188,7 @@ footer nav.home{
 
 
 
+
 @media (max-width: 560px) {
 
   body{
@@ -114,5 +197,14 @@ footer nav.home{
 
   nav.work, nav.info{
     text-align: center;
+  }
+
+
+  .caption {
+    display: none;
+  }
+
+  .slide  {
+    display: block;
   }
 }
