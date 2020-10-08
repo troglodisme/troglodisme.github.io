@@ -9,12 +9,17 @@
   color: #111111;
 }
 
+h1, h2 {
+  font-weight:600;
+}
+
 header{
   display: flex;
   justify-content: center;
   align-items: center;
-
-  background-color: red;
+  position:fixed;
+  width:100%;
+  /* background-color: red; */
 }
 
 header div{
@@ -36,7 +41,7 @@ nav.info{
 
 section {
   max-width: 960px;
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -46,8 +51,23 @@ section {
 section p{
     font-weight:400;
     font-size:24px;
+    padding-top: 50px;
+    line-height:1.4;
 }
 
+section.description{
+  position: absolute;
+  top:95%;
+}
+
+section.projects {
+  top: 50%;
+}
+
+section.projects img {
+  width:100%;
+  margin:auto;
+}
 
 .slide-container {
   /* max-width: 960px;
@@ -62,6 +82,10 @@ section p{
   width: 100%;
 }
 
+.project{
+  max-width: 960px;
+  width:100%;
+}
 /* .slide-container .slide.fade {
   animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
@@ -109,29 +133,34 @@ section p{
 }
 
 
-/* DOTS */
 
-.dots-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
+
+/* CAPTION */
+
+.caption{
+  display:flex;
+  justify-content: space-between;
 }
 
-.dots-container .dot {
-  margin: 5px;
-  width: 20px;
-  height: 20px;
+.dots-container {
+  display:flex;
+  justify-content: flex-end;
+  align-items:center;
+  /* padding: 10px; */
+  /* transform:rotate(90deg); */
+}
+
+.dot {
+  margin: 4px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   background-color: #E6E6E6;
 }
 
-.dots-container .dot.active {
+.dot.active {
   border: 2px solid black;
 }
-
-
-/* CAPTION */
 
 
 .circle{
@@ -139,23 +168,25 @@ section p{
   height:20px;
   background-color: #000000;
   border-radius: 50%;
-  margin:auto;
 }
 
-.caption p{
-  font-size: 32px;
-  text-align: center;
-  color: #111111;
-}
+/* .title{
+  text-align: left;
+} */
 
  nav a {
   color: #111111;
   text-decoration: none;
   transition: color 0.3s;
+
+
 }
 
 nav a.selected {
+  display:inline-block;
+
   color: #0000ff;
+  /* transform:rotate(180deg); */
 
 }
 nav a:hover {
@@ -168,7 +199,7 @@ footer{
   bottom: 0;
   width: 100%;
 
-  background-color: red;
+  /* background-color: red; */
 
   display: flex;
   justify-content: center;
@@ -182,9 +213,6 @@ footer div{
 footer nav.home{
   text-align: right;
 }
-
-
-
 
 
 

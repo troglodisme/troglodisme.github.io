@@ -42,7 +42,6 @@ const updateSection = function() {
 	imageTag = "assets/P7060199.JPG"
 	imageTag.load()
   // imageTag.innerHTML = items[itemNumber].image
-
 }
 
 nextTag.addEventListener('click', function () {
