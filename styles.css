@@ -86,7 +86,7 @@ a:hover{
 /* WORK */
 #work {
   margin: 148px auto 32px auto;
-  max-width:840px;
+  max-width:768px;
 }
 
 .project {
@@ -247,7 +247,7 @@ background-color:red;
 /* #PROJECT */
 
 .projectView {
-  position:relative;
+  position: relative;
 }
 .projectView .img{
   /* transform: rotate(-1deg); */

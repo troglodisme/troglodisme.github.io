@@ -1,3 +1,5 @@
+window.addEventListener("keyup", function(e){if(e.keyCode == 27)history.back();},false);
+
 // pick all of the images and layer them based on the z-index
 const slideArea = document.querySelector("div.slides")
 const images = slideArea.querySelectorAll("img")
