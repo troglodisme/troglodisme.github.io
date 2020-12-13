@@ -69,9 +69,6 @@ selectedTag.addEventListener("click", function(){
 //
 //   })
 
-
-
-
 // archiveTag.addEventListener("click", function(){
 //   archiveTag.style.textDecoration = "line-through"
 //   })
