@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500;600;700&display=swap');
+
+body {
+  font-family: Work Sans;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #111111;
+  font-weight: 400;
+  background-color: #fafafa;
+  margin: 0 auto 300px auto;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+nav a {
+  font-size: 32px;
+  color: #111111;
+  text-decoration: none;
+  font-weight: 600;
+  /* margin:24px; */
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width:100%;
+  overflow: hidden;
+  background-color:#fafafa;
+}
+
+a.toggle-nav{
+  position:fixed;
+  left:50%;
+  top:24px;
+}
+
+header nav {
+  padding: 16px;
+}
+
+header nav.work{
+  /* background:blue; */
+  float:left;
+/* width:50%; */
+}
+
+
+
+header nav.info{
+  /* background:white; */
+float:right;
+}
+
+section{
+  padding: 64px 0 64px 0;
+  max-width: 960px;
+  margin: auto;
+}
+
+div.title-bar{
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+
+.concept{
+  position:relative;
+  left:20%;
+}
+
+
+section.project img{
+  width:100%;
+  /* display: none; */
+}
+
+main{
+  display:none;
+}
+
+.open{
+  display:block;
+}

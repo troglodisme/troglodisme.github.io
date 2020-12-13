@@ -1,62 +1,100 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" href="style.css">
-  <!-- <link rel="stylesheet" href="style_slider.css"> -->
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Giulio Ammendola: Portfolio">
+  <meta property="og:url" content="https://giulioammendola.com/">
+  <title>Giulio Ammendola</title>
+  <meta name="description" content="Giulio Ammendola: Portfolio">
+  <meta name="keywords" content="Giulio Ammendola, Portfolio, giulio.ammendola, interaction design">
+  <link rel="stylesheet" href="/base.css">
+  <link rel="stylesheet" href="/fonts.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="shortcut icon" type="image/png" href="favicon.ico">
 </head>
 
 <body>
 
   <header>
-    <div>
-      <nav class="work">
-        <a href="work.html"> WORK </a>
-      </nav>
-    </div>
+    <nav class="work">
+      <a href="work.html" class="active"> work </a>
 
-    <div>
-      <nav class="info">
-        <a href="info.html"> INFO </a>
-      </nav>
-    </div>
+      <div class="mode">
+        <a href="#" id ="allButton"> all</a>
+        <span> • </span>
+        <a href="#" id ="selectedButton"> selected</a>
+      </div>
+    </nav>
+
+    <nav class="info">
+      <a href="info.html"> info </a>
+    </nav>
   </header>
 
+  <section id="work" class="">
+    <a href="/work/refill.html">
+      <div class="project all selected">
+        <div class="title-bar">
+          <h2 class="title">Refill <span class="tagline"> Making food storage smart</span></h2>
+          <h2 class="detail"> <span class="type">concept</span> <span class="year"> 2020</span> </h2>
+        </div>
+        <div class="hero"> <img src="assets/refill.png" > </div>
+      </div>
+    </a>
 
-  <section class="projects">
-    <h2 class="title">Project title</h2>
-    <img src="assets/P7060178.JPG" ></a>
-    <h2 class="title">Project title</h2>
-    <img src="assets/P7060192.JPG" ></a>
-    <h2 class="title">Project title</h2>
-    <img src="assets/P7060199.JPG" ></a>
-    <img src='https://images.unsplash.com/photo-1588796388882-a4d533c47e5e?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+    <a href="work/samlabs.html">
+      <div class="project all selected">
+        <div class="title-bar">
+          <h2 class="title">IoT Toy Platform<span class="tagline"> A new generation of Hardware blocks</span></h2>
+          <h2 class="detail"> <span class="type"></span> <span class="year"> 2016/2017</span> </h2>
+        </div>
+        <div class="hero"> <img src="assets/samlabs0.jpg" > </div>
+      </div>
+    </a>
 
-  </section>
+    <a href="/work/kluppe.html">
+      <div class="project all selected">
+        <div class="title-bar">
+          <h2 class="title">Kluppe <span class="tagline"> A ruler for the digital drawing board</span></h2>
+          <h2 class="detail"> <span class="type">concept</span> <span class="year"> 2015</span> </h2>
+        </div>
+        <div class="hero"> <img src="/assets/kluppe00.jpg" > </div>
+      </div>
+    </a>
 
 
-  <footer class="footer">
 
-    <!-- <img src="assets/prev.svg" class="prev" />
-    <img src="assets/random.svg" class="random" />
-    <img src="assets/next.svg" class="next" /> -->
+    <a href="work/refill.html">
+      <div class="project all selected">
+        <div class="title-bar">
+          <h2 class="title">Refill <span class="tagline"> Making food storage smart</span></h2>
+          <h2 class="detail"> <span class="type">concept</span> <span class="year"> 2020</span> </h2>
+        </div>
+        <div class="hero"> <img src="assets/refill.png" > </div>
+      </div>
+    </a>
+</section>
 
-    <div>
-      <nav class="lab">
-        <a href="lab.html"> LAB </a>
-      </nav>
-    </div>
-    <div>
-      <nav class="home">
-        <a href="index.html" class="selected"> GIULIO </a>
-      </nav>
-    </div>
+<!-- <a href="#" class="toggle-nav"> TEST</a> -->
 
-  </footer>
+<footer>
+  <nav class="lab">
+    <a href="lab.html"> lab </a>
+  </nav>
 
-  <!-- <script src="main.js"></script> -->
-  <!-- <script src="jquery.js"></script> -->
-  <script src="index.js"></script>
+  <!-- <nav class="home">
+  <a href="index.html"> home </a>
+</nav> -->
+</footer>
+
+<script src="scripts/jquery.js"></script>
+<script src="scripts/main.js"></script>
 
 </body>
-</html>
+
+
+
+</header>
