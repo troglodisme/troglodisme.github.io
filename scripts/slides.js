@@ -1,4 +1,7 @@
+//go back in the browser history when hitting the escape key
 window.addEventListener("keyup", function(e){if(e.keyCode == 27)history.back();},false);
+
+//TO DO: add something to stop the browswer go to empty page in case there is no previous history
 
 // pick all of the images and layer them based on the z-index
 const slideArea = document.querySelector("div.slides")
