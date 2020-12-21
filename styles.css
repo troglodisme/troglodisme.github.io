@@ -89,6 +89,7 @@ a:hover{
   justify-content:space-between;
   align-items: center;
   margin-bottom: 38px;
+
 }
 
 .title{
@@ -97,22 +98,31 @@ a:hover{
   color: #111111;
 }
 
+
 .detail{
   font-size: 32px;
   font-weight: 400;
   color: #111111;
 }
 
+
 .title-bar .tagline{
   position:absolute;
   left:0;
   top: 42px;
   font-size:18px;
-  color:#0000FF;
+  color:#000000;
+  font-style: italic;
+  /* color:#0000FF; */
 }
 
 .title-bar .year {
   margin-left: 48px;
+  display: none;
+}
+
+.title-bar .type {
+  display: none;
 }
 
 .hero {
@@ -120,8 +130,8 @@ a:hover{
 }
 
 .hero:hover{
-  /* transform: translateY(8px); */
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* transform: translateY(20px); */
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   /* display:block; */
 }
 
@@ -223,9 +233,17 @@ background-color:red;
 
 
 #project {
-  margin: 32px auto 640px auto;
+  margin: 124px auto 640px auto;
   /* margin: 124px auto 640px auto; */
   max-width:768px;
+}
+
+
+.titleSelected{
+  font-size: 32px;
+  font-weight: 400;
+  color: #0000ff;
+
 }
 
 /* .projectView {
@@ -283,7 +301,7 @@ footer {
   display: flex;
   justify-content:space-between;
   text-align: center;
-  width:90%;
+  width:100%;
 }
 
 
@@ -349,6 +367,10 @@ footer {
     display:none;
   }
 
+  .showselected .project{
+    margin-bottom: 16px;
+  }
+
   .title-bar{
     margin-bottom:0;
   }
@@ -361,9 +383,7 @@ footer {
     display:none;
   }
 
-  .showselected .project{
-    margin-bottom: 16px;
-  }
+
 
 
   #info .bio{
