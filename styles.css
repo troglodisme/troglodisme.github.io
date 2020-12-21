@@ -19,12 +19,9 @@ body {
   background-color: #eeeeee;
 }
 
-
 body::-webkit-scrollbar {
   display: none;
 }
-
-
 
 a { text-decoration: none; }
 a:visited { text-decoration: none; }
