@@ -21,6 +21,15 @@ a:hover { text-decoration: none; }
 a:focus { text-decoration: none; }
 a:hover, a:active { text-decoration: none; }
 
+h1 {
+  font-size: 32px;
+  font-weight:400;
+}
+
+h2{
+  font-size: 32px;
+  font-weight:400;
+}
 
 /* HEADER */
 header {
@@ -96,13 +105,11 @@ section {
 }
 
 .title-bar .title{
-  font-size: 32px;
   font-weight: 400;
   color: #111111;
 }
 
 .title-bar .detail{
-  font-size: 32px;
   font-weight: 400;
   color: #111111;
 }
@@ -170,7 +177,7 @@ section {
 }
 
 .showall .type{
-  /* display:none; */
+  display:inline;
 }
 
 
@@ -182,7 +189,7 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); */
-  
+
 }
 
 #info .container{
@@ -190,6 +197,10 @@ section {
   display:flex;
   justify-content:space-between;
 }
+
+/* #info .title-bar{
+  margin-bottom: 0;
+} */
 
 .bio {
   width: 50%;
@@ -351,7 +362,7 @@ footer {
 
 
 
-@media (max-width: 710px) {
+@media (max-width: 720px) {
 
   header {
     margin: 0 auto;
@@ -384,7 +395,6 @@ footer {
     color:white;
   }
 
-
   section {
     margin-top:64px;
     margin-bottom: 120px;
@@ -398,6 +408,10 @@ footer {
 
   .modeBottom{
     display:block;
+  }
+
+  #info .title-bar{
+    visibility:hidden;
   }
 
 }
@@ -428,4 +442,5 @@ footer {
     margin-bottom: 16px;
   }
 
+  
 }
