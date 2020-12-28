@@ -22,11 +22,6 @@ a:focus { text-decoration: none; }
 a:hover, a:active { text-decoration: none; }
 
 
-h1 {
-  font-size: 32px;
-  font-weight: 400;
-}
-
 /* HEADER */
 header {
   position:fixed;
@@ -40,25 +35,26 @@ header {
   text-align: center;
 }
 
-
 nav a {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 400;
   color: #111111;
   /* text-transform: uppercase; */
-
-  transition: all 0.4s ease;
+  transition: all 0.5s ease;
 }
 
-
-a:hover{
+nav a:hover{
   color:#0000FF;
+}
+
+nav .active {
+  color: #0000FF;
 }
 
 .mode {
   margin-top:10px;
   position: absolute;
-  left: 0%;
+  left: 0vw;
   /* visibility: hidden; */
 }
 
@@ -67,18 +63,22 @@ a:hover{
   font-size: 20px;
 }
 
-.active {
-  color: #0000FF;
-}
 
+/* SECTION */
 
-/* WORK */
-#work {
+section {
   margin: 124px auto 32px auto;
   max-width:768px;
 }
 
-.project {
+/* WORK */
+/* #work {
+   margin: 124px auto 32px auto;
+  max-width:768px;
+}
+*/
+
+ .project {
   display: none;
 }
 
@@ -90,13 +90,13 @@ a:hover{
   margin-bottom: 38px;
 }
 
-.title{
+.title-bar .title{
   font-size: 32px;
   font-weight: 400;
   color: #111111;
 }
 
-.detail{
+.title-bar .detail{
   font-size: 32px;
   font-weight: 400;
   color: #111111;
@@ -120,15 +120,28 @@ a:hover{
 
 .hero:hover{
   /* transform: translateY(8px); */
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   /* display:block; */
 }
 
 
+/* SELECTED */
 
-/* .project:hover .title-bar{
-  opacity: 1
-} */
+.showselected .selected{
+ display: block;
+}
+
+.showselected .project{
+ margin-bottom: 84px;
+}
+
+.showselected .year, .type{
+  display:none;
+}
+
+
+
+/* ALL */
 
 .showall .all{
   display: block;
@@ -142,18 +155,19 @@ a:hover{
   margin-bottom: 14px;
 }
 
-.showall .title-bar .tagline{
+.showall .tagline{
   position:inherit;
   margin: auto 0 auto 4px;
 }
 
-.showselected .selected{
-  display: block;
+.showall .year{
+  /* margin-left: 20px; */
 }
 
-.showselected .project{
-  margin-bottom: 84px;
+.showall .type{
+  /* display:none; */
 }
+
 
 
 /* INFO */
@@ -222,9 +236,7 @@ background-color:red;
 
 
 #project {
-  margin: 124px auto 640px auto;
   /* margin: 124px auto 640px auto; */
-  max-width:768px;
 }
 
 /* .projectView {
@@ -295,12 +307,18 @@ footer {
 }
 
 
+.modeBottom{
+  display:none;
+  background-color: red;
+  width:100%;
+}
 
 /* MEDIA */
 
 
 @media (max-width: 1400px) {
 
+  /* INFO */
   .about {
     display:none;
   }
@@ -323,12 +341,43 @@ footer {
 }
 
 
-@media (max-width: 840px) {
+@media (max-width: 768px) {
 
-  #work {
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-bottom:240px;
+  header {
+    margin: 24px auto 24px auto;
+    background-color: #eeeeee;
+  }
+
+  section {
+    margin-top:48px;
+    margin-bottom: 120px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  .mode{
+    display:none;
+  }
+
+  .modeBottom{
+    display:block;
+  }
+
+}
+
+@media (max-width: 640px) {
+
+  header {
+    margin: 18px auto 18px auto;
+    background-color:red;
+  }
+
+  section {
+    background-color:red;
+
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-bottom: 120px;
   }
 
 }
