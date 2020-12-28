@@ -387,12 +387,12 @@ footer {
     padding: 10px 0 10px 0;
   }
 
-  .active {
-    background-color: #0000ff;
-  }
-
   .active a{
     color:white;
+  }
+
+  .active {
+    background-color: #0000ff;
   }
 
   section {
@@ -409,6 +409,7 @@ footer {
   .modeBottom{
     display:block;
   }
+
 
   #info .title-bar{
     visibility:hidden;
@@ -429,18 +430,39 @@ footer {
 
 @media (max-width: 375px) {
 
-
-  .mode, .detail, .tagline, .lab{
-    display:none;
+  section {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 120px;
   }
 
+  .tagline, .mode, .lab{
+    display: none;
+  }
+
+  .title{
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  /* .hero{
+    opacity:90%;
+  } */
+
+
+  /* .mode, .detail, .tagline, .lab,{
+    display: none;
+  } */
+
   .title-bar{
-    margin-bottom: 0;
+    margin-bottom: 8px;
   }
 
   .showselected .project{
     margin-bottom: 16px;
   }
 
-  
+
 }
