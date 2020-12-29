@@ -373,26 +373,31 @@ footer {
     display: flex;
     justify-content:space-around;
     text-align: center;
+
+    background-color: #0000ff;
+  }
+
+  header a {
+    color:white;
   }
 
   .work {
-    background-color: #fafafa;
     width:100%;
     padding: 10px 0 10px 0;
   }
 
   .info {
-    background-color: #fafafa;
     width:100%;
     padding: 10px 0 10px 0;
   }
 
+
   .active a{
-    color:white;
+    color:#111111;
   }
 
   .active {
-    background-color: #0000ff;
+    background-color: #fafafa;
   }
 
   section {
