@@ -241,11 +241,10 @@ background-color:red;
 }
 
 
-
 .projectDescription{
   display:block;
   padding-right: 2vw;
-  padding-top: 8px;
+  padding-top:32px;
 }
 
 .projectDescription p{
@@ -339,7 +338,6 @@ div.slides img:first-child {
   top:50%;
   right:-32px;
   transform: translate(-50%, -50%);
-
 }
 
 .dot {
@@ -501,15 +499,22 @@ footer {
     display:block;
   }
 
+
  .dots{
    position: absolute;
-   top:94%;
-   right:0;
-   transform: translate(-50%, -50%);
+   top:unset;
+   right:unset;
+
+   left:50%;
+   bottom:-32px;
   }
 
   .dot{
     display:inline-block;
+    width:10px;
+    height:10px;
+    margin: 0 4px;
+
    }
 
   #info .title-bar{
@@ -520,14 +525,16 @@ footer {
     flex-direction:column;
   }
 
-  .container .about{
-    width:100%;
-  }
-
   .container .bio{
     width:100%;
-    padding-right:2vw;
+    padding-right: 2vw;
   }
+
+  .container .about{
+    display:none;
+  }
+
+
 
   .social{
     display:none;
