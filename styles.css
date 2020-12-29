@@ -48,7 +48,7 @@ nav a {
   font-size: 28px;
   font-weight: 400;
   color: #111111;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
   transition: all 0.5s ease;
 }
 
@@ -250,13 +250,7 @@ background-color:red;
 
 
 
-#project {
-  /* margin: 124px auto 640px auto; */
-}
 
-/* .projectView {
-  position: relative;
-} */
 
 
 .projectView .title-bar{
@@ -380,6 +374,10 @@ footer {
     color:white;
   }
 
+  nav a:hover{
+    unset: !important;
+  }
+
   .work {
     width:100%;
     padding: 10px 0 10px 0;
@@ -393,6 +391,15 @@ footer {
     background-color: #0000ff;
   }
 
+  .esc{
+    width:100%;
+    padding: 10px 0 10px 0;
+    background-color: #0000ff;
+  }
+
+  #project .info {
+    display:none;
+  }
 
   .active a{
     color:#111111;
@@ -435,7 +442,7 @@ footer {
 }
 
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
 
   section {
     padding-left: 0;

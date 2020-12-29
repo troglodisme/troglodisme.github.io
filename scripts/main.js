@@ -5,7 +5,9 @@ const selectedTag = document.querySelector("#selectedButton")
 document.addEventListener("DOMContentLoaded", function(){
 
 	document.querySelector("#work").className = "showselected";
-	document.getElementById("selectedButton").style.color = "#111111";
+	document.getElementById("allButton").style.color = "#111111";
+	document.getElementById("selectedButton").style.color = "#0000FF";
+
 
 	// document.getElementById("selectedButton").style.fontWeight = "500";
 })
