@@ -374,7 +374,6 @@ footer {
     justify-content:space-around;
     text-align: center;
 
-    background-color: #0000ff;
   }
 
   header a {
@@ -384,11 +383,14 @@ footer {
   .work {
     width:100%;
     padding: 10px 0 10px 0;
+    background-color: #0000ff;
+
   }
 
   .info {
     width:100%;
     padding: 10px 0 10px 0;
+    background-color: #0000ff;
   }
 
 
