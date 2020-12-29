@@ -184,14 +184,6 @@ section {
 
 /* INFO */
 
-#info {
-  /* position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-
-}
-
 #info .container{
   flex-wrap: wrap;
   display:flex;
@@ -520,20 +512,25 @@ footer {
     display:inline-block;
    }
 
-
   #info .title-bar{
     visibility:hidden;
   }
 
-}
+  #info .container{
+    flex-direction:column;
+  }
 
+  .container .about{
+    width:100%;
+  }
 
-@media (max-width: 640px) {
+  .container .bio{
+    width:100%;
+    padding-right:2vw;
+  }
 
-  section {
-    padding-left: 2vw;
-    padding-right: 2vw;
-    margin-bottom: 120px;
+  .social{
+    display:none;
   }
 
 }
