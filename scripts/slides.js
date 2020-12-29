@@ -1,3 +1,9 @@
+window.addEventListener("keyup", function(e) {
+  if (e.keyCode == 27) history.back();
+}
+,false);
+//TO DO: add something to stop the browswer go to empty page in case there is no previous history
+
 var slideIndex = 1;
 showSlides(slideIndex);
 

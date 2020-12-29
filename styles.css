@@ -31,6 +31,7 @@ h2{
   font-weight:400;
 }
 
+
 /* HEADER */
 header {
   position:fixed;
@@ -249,7 +250,6 @@ background-color:red;
 
 
 
-
 .projectDescription{
   display:block;
   padding-right: 2vw;
@@ -278,6 +278,12 @@ div.slides img {
 
 div.slides img:first-child {
   z-index: 1;
+} */
+
+/* .carousel-cell {
+  width: 100%;
+  height: 730px;
+  margin-right: 10px;
 } */
 
 .slideshow {
@@ -342,7 +348,6 @@ div.slides img:first-child {
   right:-32px;
   transform: translate(-50%, -50%);
 
-  z-index:1000;
 }
 
 .dot {
@@ -364,9 +369,9 @@ div.slides img:first-child {
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 0.5s;
+  -webkit-animation-duration: 0;
   animation-name: fade;
-  animation-duration: 0.5s;
+  animation-duration: 0;
 }
 
 @-webkit-keyframes fade {
@@ -448,7 +453,6 @@ footer {
     display: flex;
     justify-content:space-around;
     text-align: center;
-
   }
 
   header a {
@@ -472,7 +476,7 @@ footer {
     background-color: #0000ff;
   }
 
-  .esc{
+  .esc {
     width:100%;
     padding: 10px 0 10px 0;
     background-color: #0000ff;
@@ -505,6 +509,17 @@ footer {
     display:block;
   }
 
+ .dots{
+   position: absolute;
+   top:94%;
+   right:0;
+   transform: translate(-50%, -50%);
+  }
+
+  .dot{
+    display:inline-block;
+   }
+
 
   #info .title-bar{
     visibility:hidden;
@@ -535,8 +550,8 @@ footer {
   }
 
   section {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 2vw;
+    padding-right: 2vw;
     margin-bottom: 120px;
   }
 
@@ -568,14 +583,5 @@ footer {
     margin-bottom: 16px;
   }
 
-  .dots{
-    position: absolute;
-    top: 90%;
-    /* right: -130px; */
-  }
-
-  .dot {
-    display: inline-block;
-  }
 
 }
