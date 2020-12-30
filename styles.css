@@ -300,18 +300,19 @@ div.slides img:first-child {
 
 .prev {
   left: 0;
+  cursor: url('prev.svg'), pointer;
 }
 
 .next {
   right: 0;
+  cursor: url('next.svg'), pointer;
+
 }
 
 .prev:hover{
-  cursor: url('prev.svg'), pointer;
 }
 
 .next:hover {
-  cursor: url('next.svg'), pointer;
 }
 
 .caption {
