@@ -130,15 +130,6 @@ section {
   transition: all 0.5s ease;
 }
 
-.hero img {
-}
-
-.cover{
-
-  object-fit:cover;
-  object-position: 50% 50%;
-}
-
 .hero:hover{
   /* transform: translateY(8px); */
    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
@@ -440,7 +431,7 @@ footer {
 
 
 
-
+ 
 @media (max-width: 720px) {
 
   header {
