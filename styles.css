@@ -128,9 +128,13 @@ section {
 
 .hero {
   transition: all 0.5s ease;
+  height:420px;
 }
 
 .hero img {
+  width:100%;
+  height:100%;
+
 }
 
 .cover{
