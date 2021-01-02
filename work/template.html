@@ -11,13 +11,15 @@
 
   <meta name="description" content="Giulio Ammendola: Portfolio">
   <meta name="keywords" content="Giulio Ammendola, Portfolio, giulio.ammendola, interaction design">
-  <link rel="stylesheet" href="../base.css">
-  <link rel="stylesheet" href="../fonts.css">
-  <link rel="stylesheet" href="../styles.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
-
-
+  <link rel="stylesheet" href="/base.css">
+  <link rel="stylesheet" href="/fonts.css">
+  <link rel="stylesheet" href="/flickity.css">
+  <link rel="stylesheet" href="/styles.css">
   <link rel="shortcut icon" type="image/png" href="favicon.ico">
+
+
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css"> -->
+
 </head>
 
 
@@ -28,8 +30,6 @@
       <!-- <a href="/work.html" class="active"> back to work </a> -->
       <a href="javascript:history.back()">esc</a>
     </nav>
-
-    <nav> temp version </nav>
 
     <nav class="info">
       <a href="/info.html"> info </a>
@@ -49,7 +49,13 @@
         <h2 class="detail"><span class="" id="counter"></span></h2>
       </div>
 
-      <div class="gallery js-flickity">
+      <!-- data-flickity='{ "draggable": false }' -->
+      <!-- data-flickity='{ "wrapAround": true }'> -->
+        <div class="gallery js-flickity">
+
+        <!-- <div class="gallery js-flickity" data-flickity='{ "selectedAttraction": 0.2, "friction": 0.8 }'> -->
+
+          <!-- <div class="gallery js-flickity" data-flickity='{ "selectedAttraction": 0.2, "friction": 0.9 }'> -->
 
         <div class="gallery-cell hero">
             <img class="cover" src="/assets/template00.jpg">
@@ -60,8 +66,21 @@
             <img class="cover" src="/assets/template-1.jpg">
         </div>
 
+        <div class="gallery-cell hero">
+            <img class="cover" src="/assets/template00.jpg">
+        </div>
+
+        <div class="gallery-cell hero">
+            <img class="cover" src="/assets/template-1.jpg">
+        </div>
+
       </div>
 
+      <div class="projectDescription">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+      
     </div>
   </section>
 
@@ -93,7 +112,9 @@
 </nav> -->
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script> -->
 <script src="../scripts/slides.js"></script>
 
 </body>
