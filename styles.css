@@ -412,7 +412,7 @@ div.slides img:first-child {
 }
 
  .js-flickity .flickity-prev-next-button{
-  width:50%;
+  width:10%;
   height:100%;
   border-radius: 0;
   opacity: 0;
