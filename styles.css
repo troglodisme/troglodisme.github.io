@@ -454,6 +454,11 @@ footer {
 }
 
 
+.coda{
+  text-align:center;
+  margin-bottom:120px;
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 1430px) {
