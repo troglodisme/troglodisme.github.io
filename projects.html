@@ -8,19 +8,26 @@
   <meta name="description" content="Giulio Ammendola: Portfolio">
   <meta property="og:url" content="https://giulioammendola.com/">
   <title>Giulio Ammendola</title>
+
   <meta name="description" content="Giulio Ammendola: Portfolio">
   <meta name="keywords" content="Giulio Ammendola, Portfolio, giulio.ammendola, interaction design">
-  <link rel="stylesheet" href="base.css">
-  <link rel="stylesheet" href="fonts.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/base.css">
+  <link rel="stylesheet" href="/fonts.css">
+  <link rel="stylesheet" href="/flickity.css">
+  <link rel="stylesheet" href="/styles.css">
   <link rel="shortcut icon" type="image/png" href="favicon.ico">
+
+
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css"> -->
+
 </head>
+
 
 <body>
 
   <header>
     <nav class="work active">
-      <a href="work.html">
+      <a href="projects.html">
         <div> work </div>
       </a>
 
@@ -32,113 +39,296 @@
     </nav>
 
     <nav class="info">
-      <a href="info.html">
+      <a href="index.html">
         <div> info </div>
       </a>
     </nav>
   </header>
 
-  <section id="work" class="">
+  <!-- <button id="none">none</button>
+  <button id="all">all</button>
+  <button id="selected">selected</button> -->
 
-    <a href="work/template.html">
-      <div class="project all selected">
-        <div class="title-bar">
-          <h2 class="title">Template<span class="tagline">A project template</span></h2>
-          <h2 class="detail"> <span class="type">concept</span> <span class="year">2019</span> </h2>
-        </div>
-        <div class="hero">
-          <img class="cover" src="assets/template00.jpg">
-        </div>
+
+  <section id="project" class="">
+
+    <div  class="projectView">
+      <div class="title-bar">
+        <h2 class="title">Lettera Automata<span class="tagline">Co-creating stories with artificial intelligence</span></h2>
+        <h2 class="detail"><span class="" id="counter"></span></h2>
       </div>
-    </a>
 
-    <a href="work/refill.html">
-      <div class="project all selected">
-        <div class="title-bar">
-          <h2 class="title">Refill<span class="tagline">Smart food containers</span></h2>
-          <h2 class="detail"> <span class="type">concept</span> <span class="year">2019</span> </h2>
-        </div>
-        <div class="hero"> <img class="cover"src="assets/gif.gif" > </div>
+      <!-- data-flickity='{ "draggable": false }' -->
+      <!-- data-flickity='{ "wrapAround": true }'> -->
+        <div class="gallery js-flickity">
 
-        <!-- <div class="hero"> <img src="assets/Refill_0.jpg" > </div> -->
-      </div>
-    </a>
+        <!-- <div class="gallery js-flickity" data-flickity='{ "selectedAttraction": 0.2, "friction": 0.8 }'> -->
 
-    <a href="work/glimpse.html">
-      <div class="project all selected">
-        <div class="title-bar">
-          <h2 class="title">Glimpse<span class="tagline">Helping blind skiers </span></h2>
-          <h2 class="detail"> <span class="type">concept</span> <span class="year">2019</span> </h2>
-        </div>
-        <div class="hero"> <img src="assets/giulio-ammendola-glimpse-0.jpg" > </div>
-        <!-- <div class="hero"> <img src="assets/Refill_2.jpg" > </div> -->
+          <!-- <div class="gallery js-flickity" data-flickity='{ "selectedAttraction": 0.2, "friction": 0.9 }'> -->
 
-      </div>
-    </a>
+        <div class="gallery-cell hero">
+            <img class="cover" src="assets/giulio-ammendola-letteraautomata-0.jpg">
+          </div>
 
-    <a href="work/pin.html">
-      <div class="project all selected">
-        <div class="title-bar">
-          <h2 class="title">Pin<span class="tagline">Retrace your museum experience</span></h2>
-          <h2 class="detail"> <span class="type">concept</span> <span class="year">2018</span> </h2>
+        <div class="gallery-cell hero">
+          <img class="cover" src="assets/giulio-ammendola-letteraautomata-1.jpg">
         </div>
 
-        <div class="hero"> <img src="assets/giulio-ammendola-pin-0.jpg" > </div>
-        <!-- <div class="hero"> <img src="assets/Pin_0.jpg" > </div> -->
+        <div class="gallery-cell hero">
+          <img class="cover" src="assets/giulio-ammendola-letteraautomata-2.jpg">
+        </div>
+
+        <div class="gallery-cell hero">
+          <img class="cover" src="assets/giulio-ammendola-letteraautomata-3.gif">
+        </div>
 
       </div>
-    </a>
 
-    <!-- <a href="/work/refill.html">
-      <div class="project all selected">
-        <div class="title-bar">
-          <h2 class="title">Refill <span class="tagline"> Making food storage smart</span></h2>
-          <h2 class="detail"> <span class="type">concept</span> <span class="year"> 2020</span> </h2>
-        </div>
-        <div class="hero"> <img src="assets/refill0.png" > </div>
+      <div class="projectDescription">
+        <p>Lettera Automata is a sculptural and sound installation that combines elements of Machine Learning with the visitors’ inputs to co-create content. </p> </br>
+            <p>
+                The machine automatically generates and types a long narrative by processing and analysing personal (instagram) stories that visitors share with it, ultimately commissioning a work of art(ificial intelligence). Every word is constantly weighed against a thousand others and choices are made by an invisible creator.
+                When it's almost certain that the next generation of word processors will include even more tools to assist the writer, how will our perception of authorship change if an AI has helped getting us there?
+          </p>
+          <br>
+          <br>
       </div>
-    </a>
+    </div>
 
-    <a href="work/samlabs.html">
-      <div class="project all selected">
-        <div class="title-bar">
-          <h2 class="title">IoT Toy Platform<span class="tagline"> A new generation of Hardware blocks</span></h2>
-          <h2 class="detail"> <span class="type"></span> <span class="year"> 2016/2017</span> </h2>
-        </div>
-        <div class="hero"> <img src="assets/samlabs0.jpg" > </div>
+
+    <div  class="projectView">
+      <div class="title-bar">
+        <h2 class="title">Hermeneutic Circle <span class="tagline">Manipulating interferences</span></h2>
+        <h2 class="detail"><span class="" id="counter"></span></h2>
       </div>
-    </a>
 
-    <a href="/work/kluppe.html">
-      <div class="project all selected">
-        <div class="title-bar">
-          <h2 class="title">Kluppe <span class="tagline"> A ruler for the digital drawing board</span></h2>
-          <h2 class="detail"> <span class="type">concept</span> <span class="year"> 2015</span> </h2>
+      <!-- data-flickity='{ "draggable": false }' -->
+      <!-- data-flickity='{ "wrapAround": true }'> -->
+        <div class="gallery js-flickity">
+
+        <!-- <div class="gallery js-flickity" data-flickity='{ "selectedAttraction": 0.2, "friction": 0.8 }'> -->
+
+          <!-- <div class="gallery js-flickity" data-flickity='{ "selectedAttraction": 0.2, "friction": 0.9 }'> -->
+
+        <div class="gallery-cell hero">
+            <img class="cover" src="/assets/giulio-ammendola-hermeneuticcircle-0.jpg">
+          </div>
+
+
+        <div class="gallery-cell hero">
+          <img class="cover" src="/assets/giulio-ammendola-hermeneuticcircle-1.jpg">
         </div>
-        <div class="hero"> <img src="/assets/kluppe0.jpg" > </div>
-      </div>
-    </a>
 
-    <a href="work/refill.html">
-      <div class="project all selected">
-        <div class="title-bar">
-          <h2 class="title">Refill <span class="tagline"> Making food storage smart</span></h2>
-          <h2 class="detail"> <span class="type">concept</span> <span class="year"> 2020</span> </h2>
+        <div class="gallery-cell hero">
+          <img class="cover" src="/assets/giulio-ammendola-hermeneuticcircle-2.jpg">
         </div>
-        <div class="hero"> <img src="assets/refill.png" > </div>
-      </div>
-    </a> -->
-</section>
 
-<div class="modeBottom"> all or selected </div>
+        <div class="gallery-cell hero">
+          <img class="cover" src="/assets/giulio-ammendola-hermeneuticcircle-3.jpg">
+        </div>
+
+      </div>
+
+      <div class="projectDescription">
+        <p>A sound installation that refers to the concepts
+of interpretation and mutation of a message,
+represented as radio signal. Resembling the form
+of a game of Chinese Whispers, this installation
+focuses on the implication of interferences
+created by multiple and clashing elements.
+A message recorded by the visitor is broadcasted
+FM to the first radio of the circle and, at the same
+time, its output is recorded again, mutated in its
+form. The circle of interpretation finishes when all
+the radios have interpreted the initial message.
+Visitors, radios and a broadcasted signal are the
+characters of this game. Under a new light, the
+whispers are not a mere destruction of the signal,
+they are also a distortion and a transformation.
+The circle of misconstruction thus becomes a
+virtuous circle of reconstruction, of innovation
+through site specific interferences, and ultimately,
+a circle of creation.
+Creation is ultimately a mis-take.
+        </p>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+
+
+    <div  class="projectView">
+      <div class="title-bar">
+        <h2 class="title">16mm Camera Frequency Monitor<span class="tagline">Custom electronic device</span></h2>
+        <h2 class="detail"><span class="" id="counter"></span></h2>
+      </div>
+
+      <!-- data-flickity='{ "draggable": false }' -->
+      <!-- data-flickity='{ "wrapAround": true }'> -->
+        <div class="gallery js-flickity">
+
+        <!-- <div class="gallery js-flickity" data-flickity='{ "selectedAttraction": 0.2, "friction": 0.8 }'> -->
+
+          <!-- <div class="gallery js-flickity" data-flickity='{ "selectedAttraction": 0.2, "friction": 0.9 }'> -->
+
+        <div class="gallery-cell hero">
+            <img class="cover" src="/assets/giulio-ammendola-frequencymonitor-0.jpg">
+          </div>
+
+
+        <div class="gallery-cell hero">
+          <img class="cover" src="/assets/giulio-ammendola-frequencymonitor-1.jpg">
+        </div>
+
+        <div class="gallery-cell hero">
+          <img class="cover" src="/assets/giulio-ammendola-frequencymonitor-2.jpg">
+        </div>
+
+        <div class="gallery-cell hero">
+          <img class="cover" src="/assets/giulio-ammendola-frequencymonitor-3.jpg">
+        </div>
+
+      </div>
+
+      <div class="projectDescription">
+        <p>Commissioned by DOP Ruben Woodin Dechamps, I built a frequency monitor that could help him use a vintage 16mm camera in challenging environement and for a site specific project.
+          The meter is mounted on the camera and is able to display the values on a screen and also transmit them over bluetooth to a phone.
+        </p>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+
+
+
+    <div  class="projectView">
+      <div class="title-bar">
+        <h2 class="title">Pin<span class="tagline">Retrace your museum experience</span></h2>
+        <h2 class="detail"><span class="" id="counter"></span></h2>
+      </div>
+
+      <!-- data-flickity='{ "draggable": false }' -->
+      <!-- data-flickity='{ "wrapAround": true }'> -->
+        <div class="gallery js-flickity">
+
+        <!-- <div class="gallery js-flickity" data-flickity='{ "selectedAttraction": 0.2, "friction": 0.8 }'> -->
+
+          <!-- <div class="gallery js-flickity" data-flickity='{ "selectedAttraction": 0.2, "friction": 0.9 }'> -->
+
+        <div class="gallery-cell hero">
+            <img class="cover" src="/assets/giulio-ammendola-pin-0.jpg">
+          </div>
+
+        <div class="gallery-cell hero">
+          <img class="cover" src="/assets/giulio-ammendola-pin-1.jpg">
+        </div>
+
+        <div class="gallery-cell hero">
+          <img class="cover" src="/assets/giulio-ammendola-pin-2.jpg">
+        </div>
+
+        <div class="gallery-cell hero">
+          <img class="cover" src="/assets/giulio-ammendola-pin-3.jpg">
+        </div>
+
+      </div>
+
+      <div class="projectDescription">
+        <p>Pin is a smart wearable badge that tracks visitors' journeys through a museum and generates a personalised
+          narrative to take home with them - extending their experience beyond the physical perimeter of the gallery space.</p>
+        <p>Concept developed with Francesco Caneschi for the 2019 Playable Museum Award.</p>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+
+    <div  class="projectView">
+      <div class="title-bar">
+        <h2 class="title">SAM Labs<span class="tagline">A selection of work</span></h2>
+        <h2 class="detail"><span class="" id="counter"></span></h2>
+      </div>
+
+      <!-- data-flickity='{ "draggable": false }' -->
+      <!-- data-flickity='{ "wrapAround": true }'> -->
+        <div class="gallery js-flickity">
+
+        <!-- <div class="gallery js-flickity" data-flickity='{ "selectedAttraction": 0.2, "friction": 0.8 }'> -->
+
+          <!-- <div class="gallery js-flickity" data-flickity='{ "selectedAttraction": 0.2, "friction": 0.9 }'> -->
+
+        <div class="gallery-cell hero">
+            <img class="cover" src="/assets/giulio-ammendola-samlabs-0.jpg">
+          </div>
+
+        <div class="gallery-cell hero">
+          <img class="cover" src="/assets/giulio-ammendola-samlabs-1.jpg">
+        </div>
+
+        <div class="gallery-cell hero">
+          <img class="cover" src="/assets/giulio-ammendola-samlabs-2.jpg">
+        </div>
+
+        <div class="gallery-cell hero">
+          <img class="cover" src="/assets/giulio-ammendola-samlabs-3.jpg">
+        </div>
+
+      </div>
+
+      <div class="projectDescription">
+        <p>SAM Labs mission is to encourage every kid to
+discover the fun of coding and creating. Over the
+past 4 years I have worked towards realising that
+vision through a playful combination of physical
+and digital elements, a set of wireless hardware
+blocks with a variety of functions is programmed
+through an app both for fun and educational
+activities.
+This is a selection of the projects I have been
+working on over the four years there.</p>
+
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+
+  </section>
+
+<!-- <section id="work" class="">
+<div class="projectView">
+<div class="title-bar">
+<h2 class="title">Refill <span class="tagline"> Making food storage smart</span></h2>
+</div>
+<div class="img"> <img src="/assets/refill.png" > </div>
+</div>
+
+<div class="projectDescription">
+<p>
+
+</p>
+
+
+</section> -->
+
+<!-- <a href="#" class="toggle-nav"> TEST</a> -->
 
 <footer>
-  <nav class="lab">
+  <!-- <nav class="lab">
     <a href="lab.html"> lab </a>
-  </nav>
+  </nav> -->
+
+  <!-- <nav class="home">
+  <a href="index.html"> home </a>
+</nav> -->
 </footer>
 
-<script src="scripts/main.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script> -->
+<script src="../scripts/slides.js"></script>
 
 </body>
 
