@@ -1,14 +1,23 @@
 const allTag = document.querySelector("#allButton")
 const selectedTag = document.querySelector("#selectedButton")
-const heroTag = document.querySelectorAll(".hero")
+// const heroTag = document.querySelectorAll(".hero")
 
 document.addEventListener("DOMContentLoaded", function(){
+
 	document.querySelector("#work").className = "showselected";
+	document.getElementById("allButton").style.color = "#111111";
 	document.getElementById("selectedButton").style.color = "#0000FF";
+
+
+	// document.getElementById("selectedButton").style.fontWeight = "500";
 })
 
+
 allTag.addEventListener("click", function(){
+
 	document.querySelector("#work").className = "showall";
+	console.log("show all projects")
+
 	document.getElementById("allButton").style.color = "#0000FF";
 	document.getElementById("selectedButton").style.color = "#111111";
 
@@ -17,6 +26,7 @@ allTag.addEventListener("click", function(){
 
 selectedTag.addEventListener("click", function(){
 	document.querySelector("#work").className = "showselected";
+	console.log("show selected projects")
 
 	document.getElementById("selectedButton").style.color = "#0000FF";
 	document.getElementById("allButton").style.color = "#111111";
