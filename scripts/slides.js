@@ -1,39 +1,32 @@
-window.addEventListener("keyup", function(e) {
-  if (e.keyCode == 27) history.back();
-}
-,false);
+//go back in the browser history when hitting the escape key
+window.addEventListener("keyup", function(e){if(e.keyCode == 27)history.back();},false);
+
 //TO DO: add something to stop the browswer go to empty page in case there is no previous history
 
-var slideIndex = 1;
-showSlides(slideIndex);
+// pick all of the images and layer them based on the z-index
+const slideArea = document.querySelector("div.slides")
+const images = slideArea.querySelectorAll("img")
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+// we want to keep track of two things
+let currentSlide = 0
+let z = 1
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+// when i click the slide area, change the slide based on z-index
+slideArea.addEventListener("click", function () {
+  currentSlide = currentSlide + 1
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("slides");
-  var dots = document.getElementsByClassName("dot");
-
-  if (n > slides.length) {
-    slideIndex = 1}
-
-  if (n < 1) {
-    slideIndex = slides.length}
-
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+  if (currentSlide > images.length - 1) {
+    currentSlide = 0
   }
 
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
+  z = z + 1
 
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
+  // remove the animation from the style for EVERY IMAGE
+  images.forEach(image => {
+    image.style.animation = ""
+  })
+
+  // pick the right image
+  images[currentSlide].style.zIndex = z
+  images[currentSlide].style.animation = "fade 0.5s"
+})
